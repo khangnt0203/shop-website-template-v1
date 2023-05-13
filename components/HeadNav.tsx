@@ -1,19 +1,29 @@
+import { data } from "autoprefixer";
+import { useState } from "react";
+
 export default function HeadNav() {
+  const [insShopName, setinsShopName] = useState("InsShopName");
+  const [shopName, setshopName] = useState("ShopName");
   const cateList = [
-    { index: 1, title: "Trang chủ" },
-    { index: 2, title: "Áo" },
-    { index: 3, title: "Quần" },
-    { index: 4, title: "Nón" },
-    { index: 5, title: "Phụ kiện" },
-    { index: 6, title: "Gấu bông" },
-    { index: 7, title: "Gấu bông" },
+    { index: 1, title: "giày" },
+    { index: 2, title: "nón" },
+    { index: 3, title: "áo" },
+    { index: 4, title: "quần" },
+    { index: 5, title: "phụ kiện" },
   ];
-  
   return (
-    <div className={`grid grid-cols-${cateList?.length} gap-4 mx-auto`}>
-      {cateList.map((data) => 
-        <div key={data.index}>{data.title}</div>
-      )}
-    </div>
+    <header>
+      <div className="bg-black text-center uppercase text-white font-sans text-sm py-2">
+        follow us on instagram: {insShopName}{" "}
+      </div>
+      <div className="border-b">
+        <h1 className="mt-10 ml-12 mb-5 text-5xl font-semibold ">{shopName}</h1>
+      </div>
+      <nav className="mt-8 ml-12 uppercase  grid grid-cols-5 gap-4">
+        {cateList.map((data) => (
+          <div key={data.index}>{data.title}</div>
+        ))}
+      </nav>
+    </header>
   );
 }

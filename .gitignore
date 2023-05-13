@@ -33,3 +33,7 @@ yarn-error.log*
 # typescript
 *.tsbuildinfo
 next-env.d.ts
+<<<<<<< HEAD
+=======
+yarn.lock
+>>>>>>> eb224ea904927d3f1d845ab374c0923112366cbe

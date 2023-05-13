@@ -7,7 +7,11 @@ const inter = Inter({ subsets: ["latin"] });
 export default function Home() {
   return (
     <main>
+<<<<<<< HEAD
    <HeadNav/>
+=======
+      <HeadNav />
+>>>>>>> eb224ea904927d3f1d845ab374c0923112366cbe
     </main>
   );
 }
