@@ -19,7 +19,7 @@ export default function HeadNav() {
       <div className="border-b">
         <h1 className="mt-10 ml-12 mb-5 text-5xl font-semibold ">{shopName}</h1>
       </div>
-      <nav className="mt-8 ml-12 uppercase  grid grid-cols-5 gap-4">
+      <nav className="mt-8 ml-12 uppercase grid grid-cols-5 gap-4">
         {cateList.map((data) => (
           <div key={data.index}>{data.title}</div>
         ))}
